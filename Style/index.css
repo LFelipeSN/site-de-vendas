@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Nixie+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Nixie+One&display=swap');
+
+:root{
+    --bg-body:linear-gradient(180deg, rgba(117, 36, 61, 0.75) 8.33%, rgba(220, 147, 169, 0.73) 100%);
+    --logo-color-animation: linear-gradient(90deg, white, #484d50,  white ,white);
+}
+
+*{
+    text-align: center;
+    font: 26.6px 'poppins';
+    user-select: none;
+}
+
+html{
+    background: black;
+    color: white;
+}
+
+body{    
+    background: var(--bg-body);
+    height: 100%;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem; 
+}
+
+img{
+    border-radius: 10px;
+}
+
+#logo, #ucinete_span {
+    background: var(--logo-color-animation);
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;  
+    background-size: 500% 100%;
+    animation: animacao_logo 10s infinite ease-in-out; 
+}
+
+#logo #L_span{
+    font: 93.1px 'Nanum Myeongjo';
+    font-weight: 800;
+}
+#logo #ucinete_span{
+    font: 66.5px 'Nixie One';
+    position: absolute;
+    left: 52px;
+}
+#logo #variedades_span{
+    font: 26.6px 'Nixie One';
+    letter-spacing: 6.304px;
+}
+
+#opcoes{
+    display: flex;
+    justify-content: end;
+    width: 830px;
+    gap: 3rem;
+    margin-top: 20px;
+}
+
+#opcoes span{
+    height: 50px;
+}
+
+#opcoes span:hover{
+    cursor: pointer;
+}
+
+
+header input{
+    width: 228px;
+    height: 31px;
+    border-radius: 10px; 
+    text-align: start;
+    padding-left: 13px;
+}
+
+section{
+    width: 1366px;
+    margin: auto;
+}
+
+.novidades p{
+    text-align: start;
+    margin-left: 20px;
+    font: 40pt 'poppins';
+    font-weight: 500;
+} 
+
+.carrosel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 71px;
+    margin-bottom: 297px;
+}
+
+.carrosel i{
+    font-size: 100px;
+}
+
+.mais{
+    width: 1096px;
+    height: 643px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 17px;
+}
+
+.mais p{
+    height: 38px;
+    width: 152px;
+    font: 15pt 'poppins';
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: #BA5454;
+    margin: auto;
+}
+
+.mais p:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.mais p:active{
+    scale: 0.9;
+}
+
+footer{
+    text-align: end;
+    font: 8pt arial;
+}
+
+@keyframes animacao_logo{
+    10%{background-position: 100% 50%;}
+    20%{background-position: 0% 50%;}
+    35%{background-position: 100% 50%;}
+}

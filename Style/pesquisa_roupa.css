@@ -1,0 +1,15 @@
+section{
+    height: 900px;
+    width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 11px;
+    margin: 93px auto auto auto;
+    justify-content: center;
+}
+
+section i{
+    opacity: 0.2;
+    font-size: 120px;
+    margin-top: -49px;
+}

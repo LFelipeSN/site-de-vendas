@@ -91,11 +91,14 @@ img{
 }
 /************************disabled************************/
 
+#opcoes span:nth-child(4){
+    display: flex;
+    width: 256px;
+}
 
 #opcoes span:hover{
     cursor: pointer;
 }
-
 
 header input{
     width: 228px;

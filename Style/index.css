@@ -23,6 +23,11 @@ section{
     font-size: 100px;
 }
 
+.carrosel i:hover{
+    cursor: pointer;
+    scale: 1.05;
+}
+
 .mais{
     width: 1096px;
     height: 643px;

@@ -58,6 +58,10 @@ img{
     letter-spacing: 6.304px;
 }
 
+#logo:hover{
+    cursor: pointer;
+}
+
 #opcoes{
     display: flex;
     justify-content: end;
@@ -102,6 +106,10 @@ img{
 }
 /************************disabled************************/
 
+.botao_pesquisa:hover{
+    cursor: pointer;
+}
+
 
 header input{
     width: 228px;
@@ -117,6 +125,7 @@ footer{
     font: 8pt arial;
 }
 
+
 @keyframes animacao_logo{
     10%{background-position: 100% 50%;}
     20%{background-position: 0% 50%;}
@@ -127,3 +136,4 @@ footer{
     from{width: 0%;}
     to{width: 100%;}
 }
+

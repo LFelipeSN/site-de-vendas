@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucinete Variedades</title>
     <link rel="stylesheet" href="Style/index.css">
     <link rel="stylesheet" href="Style/pageStyle.css">
     <link rel="icon" href="fotos/pexels-sharefaith-1231265.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <script src="https://kit.fontawesome.com/a679630483.js" crossorigin="anonymous"></script>
+    <title>Lucinete Variedades</title>
 </head>
 <body>
 <!--     
@@ -24,24 +25,60 @@
             <span id="ucinete_span">UCINETE</span>
             <span id="variedades_span">Variedades</span>
         </div>
-        <span id="opcoes"> 
-            <span><i class="fa-solid fa-shirt" style="color: #ffffff;"></i>ROUPAS</span> 
-            <span><i class="fa-solid fa-spray-can-sparkles" style="color: #ffffff;"></i>PERFUMES</span> 
-            <span><img src="fotos/icon/icone_colar.png">ACESSÓRIOS</span> 
-            <span><input type="text" placeholder="Buscar"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></span>
+        <div id="opcoes"> 
+            <span id="opRoupas"><i class="fa-solid fa-shirt" style="color: #ffffff;"></i>ROUPAS</span> 
+            <span id="opPergumes"><i class="fa-solid fa-spray-can-sparkles" style="color: #ffffff;"></i>PERFUMES</span> 
+            <span id="opAcessorios"><img src="fotos/icon/icone_colar.png">ACESSÓRIOS</span>
+            <span><input type="text" placeholder="Buscar"><i class="botao_pesquisa fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></span>
         </div>
     </header>
            
     <section class="novidades">
         <p><u>NOVIDADES:</u></p>
 
-        <div class="carrosel">
-            <span><i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i></span>
-            <img src="fotos/fotosIndex/pullover-pendurado_resized.jpg" alt="img1">
-            <img src="fotos/fotosIndex/pullover-pendurado-center.jpg" alt="img2">
-            <img src="fotos/fotosIndex/pullover-pendurado_resized.jpg" alt="img3">
-            <span><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></span>
-        </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img src="fotos/fotosIndex/Carrossel/pullover-pendurado_resized.jpg"><span>img1</span>
+                </div>
+
+               <div class="swiper-slide">
+                    <img src="fotos/fotosIndex/Carrossel/pullover-pendurado_resized.jpg"><span>img2</span>
+                </div>
+
+               <div class="swiper-slide">
+                    <img src="fotos/fotosIndex/Carrossel/pullover-pendurado_resized.jpg"><span>img3</span>
+                </div>
+
+               <div class="swiper-slide">
+                    <img src="fotos/fotosIndex/Carrossel/pullover-pendurado_resized.jpg"><span>img4</span>
+                </div>
+
+               <div class="swiper-slide">
+                    <img src="fotos/fotosIndex/Carrossel/pullover-pendurado_resized.jpg"><span>img5</span>
+                </div>
+
+               <div class="swiper-slide">
+                    <img src="fotos/fotosIndex/Carrossel/pullover-pendurado_resized.jpg"><span>img6</span>
+                </div>
+
+            </div>
+            <div class="arrow">
+                <div class="swiper-button-prev icon"></div>
+                <div class="swiper-button-next icon"></div>
+            </div>
+        </div>    
+       
+            <!-- <div class="swiper-slide"><img src="fotos/fotosIndex/Carrossel/pullover-pendurado_resized.jpg"></div>
+            <div class="swiper-slide"><img src="fotos/fotosIndex/Carrossel/pullover-pendurado_resized.jpg"></div>
+            <div class="swiper-slide"><img src="fotos/fotosIndex/Carrossel/pullover-pendurado_resized.jpg"></div>
+            <div class="swiper-slide"><img src="fotos/fotosIndex/Carrossel/pullover-pendurado_resized.jpg"></div>
+            <div class="swiper-slide"><img src="fotos/fotosIndex/Carrossel/pullover-pendurado_resized.jpg"></div>
+            <div class="swiper-slide"><img src="fotos/fotosIndex/Carrossel/pullover-pendurado_resized.jpg"></div>
+            <div class="swiper-slide"><img src="fotos/fotosIndex/Carrossel/pullover-pendurado_resized.jpg"></div>
+            <div class="swiper-slide"><img src="fotos/fotosIndex/Carrossel/pullover-pendurado_resized.jpg"></div> -->
+        
     </section>
 
     <section class="mais">
@@ -59,5 +96,8 @@
     <footer>
         &copy; NepomucenoF
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="Controller/index.js"></script>
 </body>
 </html>

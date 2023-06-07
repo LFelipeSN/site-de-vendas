@@ -11,21 +11,20 @@ section{
     font-weight: 500;
 } 
 
-.carrosel{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 71px;
+.swiper{
     margin-bottom: 297px;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
-.carrosel i{
-    font-size: 100px;
+.arrow div{
+    color:white;
 }
 
-.carrosel i:hover{
-    cursor: pointer;
-    scale: 1.05;
+.arrow div:hover{
+    scale: 1.1;
+    color:white
 }
 
 .mais{

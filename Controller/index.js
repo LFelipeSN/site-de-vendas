@@ -39,14 +39,11 @@ function url_view_roupa(){
     window.location.href="view/pesquisa_roupa.html";
 }
 
-var swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".swiper", {
+    centeredSlides: true,
+    spaceBetween: 10,
     slidesPerView: 3,
-    speed: 100,
-    cssMode: true,
-    loop: false,
-    pagination: {
-        el: ".swiper-pagination",
-    },
+    speed: 500,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
@@ -54,7 +51,5 @@ var swiper = new Swiper(".swiper", {
     autoplay: {
         delay: 5000
     },
-    zoom: {
-        maxRatio: 5
-    },
+   
 })
